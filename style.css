@@ -15,7 +15,7 @@
     --card-border-hover: #374151;
     --text-main: #f3f4f6;
     --text-muted: #9ca3af;
-    --accent-color: #38bdf8;
+    --accent-color: #fff714;
     --accent-glow: rgba(56, 189, 248, 0.15);
 }
 
@@ -71,7 +71,7 @@ nav a, .navbar-btn {
   padding: 10px 20px;
   margin: 0 6px;
   text-decoration: none;
-  font-family: "OCR-A", monospace;
+  font-family: "OCR-A Silkscreen", monospace;
   text-transform: uppercase;
   font-weight: bold;
   
@@ -95,7 +95,7 @@ nav a, .navbar-btn {
 /* 2. HOVER STATE (RAISES HIGHER) */
 nav a:hover:not(.active), 
 .navbar-btn:hover:not(.active) {
-  background-color: #383838;
+  background-color: #2c2e47;
   top: -2px;
   box-shadow: 0px 7px 0px #111111, 0px 9px 12px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -116,8 +116,8 @@ nav a:active,
 nav a.active, 
 nav a[aria-current="page"],
 .navbar-btn.active {
-  background-color: #004D25;            /* PCB Green (or dark inset color) */
-  color: #00FF66;                       /* Bright text highlight */
+  background-color: #296345;            /* PCB Green (or dark inset color) */
+  color: #5ee694;                       /* Bright text highlight */
   
   /* Shift downward to sit flat */
   top: 5px;
