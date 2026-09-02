@@ -51,6 +51,7 @@ body {
 main, .navbar, footer {
     max-width: 900px;
     margin: 0 auto;
+    
 }
 
 /* Navigation */
@@ -59,6 +60,76 @@ main, .navbar, footer {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+}
+
+/* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
+nav a, .navbar-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 6px;
+  text-decoration: none;
+  font-family: "OCR-A", monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  /* Palette & Border */
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 2px solid #111111;
+  border-radius: 4px;
+
+  /* Elevated 3D Edge & Shadow */
+  border-top-color: #555555;
+  border-left-color: #555555;
+  box-shadow: 0px 5px 0px #111111, 0px 7px 10px rgba(0, 0, 0, 0.4);
+  
+  /* Positioning & Transition */
+  position: relative;
+  top: 0px;
+  transition: all 0.1s ease;
+}
+
+/* 2. HOVER STATE (RAISES HIGHER) */
+nav a:hover:not(.active), 
+.navbar-btn:hover:not(.active) {
+  background-color: #383838;
+  top: -2px;
+  box-shadow: 0px 7px 0px #111111, 0px 9px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* 3. TEMPORARY CLICK STATE (:active) */
+nav a:active, 
+.navbar-btn:active {
+  top: 5px;
+  border-top-color: #111111;
+  border-left-color: #111111;
+  border-bottom-color: #555555;
+  border-right-color: #555555;
+  box-shadow: 0px 0px 0px #111111, inset 0px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* 4. PERMANENT RECESSED / TOGGLED STATE (.active or aria-current) */
+nav a.active, 
+nav a[aria-current="page"],
+.navbar-btn.active {
+  background-color: #004D25;            /* PCB Green (or dark inset color) */
+  color: #00FF66;                       /* Bright text highlight */
+  
+  /* Shift downward to sit flat */
+  top: 5px;
+  
+  /* Invert bevel borders to look sunken into the panel */
+  border-top-color: #002210;
+  border-left-color: #002210;
+  border-bottom-color: #00803d;
+  border-right-color: #00803d;
+  
+  /* Remove drop-shadow and add inner shadow for depth */
+  box-shadow: 0px 0px 0px transparent, inset 0px 3px 6px rgba(0, 0, 0, 0.7);
+  
+  /* Disable pointer cursor to signify current page */
+  cursor: default;
 }
 
 .logo {
@@ -89,7 +160,7 @@ main, .navbar, footer {
   letter-spacing: 0.2em;             /* Wide tracking mimics plotter stroke paths */
   font-size: 1.5rem;
   line-height: 1.2;
-  
+
   color: #fff714;     
   padding: 6px 12px;
 
