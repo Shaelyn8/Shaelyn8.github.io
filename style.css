@@ -17,32 +17,15 @@
 }
 
 body {
-    /* Set the deep background color (this shows through the fade) */
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6;
-    padding: 0 1.5rem;
-
-    /* --- ADD THESE BACKGROUND RULES --- */
-
-    /* 1. Set the background image *behind* a gradient mask */
-    background-image: 
-        linear-gradient(
-            to bottom, 
-            rgba(11, 15, 25, 0.2), /* Very bright/transparent top */
-            rgba(11, 15, 25, 1)    /* Fully opaque at the bottom, matching your bg color */
-        ),
-        url('background.png'); /* Your image file name here */
-
-    /* 2. Position the image and fix its perspective */
-    background-size: cover;          /* Make the image fill the screen */
-    background-position: top center;  /* Anchor the "bright" part to the top */
-    background-attachment: fixed;    /* This keeps the *background* static as you scroll */
+    body {
+    background-color: #0b0f19;
+    /* Replace 'background.jpg' with your actual filename */
+    background-image: url('pcblayout.png'); 
+    background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
-    
-    /* 3. Optional: Add depth with perspective (Sunny-style touch) */
-    perspective: 1px;
+    color: #f3f4f6;
+}
 }
 
 main, .navbar, footer {
