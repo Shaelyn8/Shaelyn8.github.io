@@ -90,14 +90,9 @@ main, .navbar, footer {
   font-size: 1.5rem;
   line-height: 1.2;
   
-  /* Silkscreen Color Theme (White Ink on Green Solder Mask) */
-  color: #FFFFFF;
-  background-color: #004D25;         /* Classic Dark Green PCB */
+  color: #fff714;     
   padding: 6px 12px;
-  display: inline-block;
-  
-  /* Optional: Adds minor ink thickness/bleed effect */
-  -webkit-text-stroke: 0.3px #FFFFFF;
+
 }
 
 .hero h1 {
