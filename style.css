@@ -60,6 +60,9 @@ main, .navbar, footer {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
