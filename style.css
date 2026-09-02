@@ -1,4 +1,13 @@
 /* Color Palette & Variables */
+@font-face {
+  font-family: 'OCR-A Silkscreen';
+  src: url('fonts/ocra.woff2') format('woff2'),
+       url('fonts/ocra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text while loading */
+}
+
 :root {
     --bg-color: #0b0f19;
     --card-bg: #111827;
@@ -75,16 +84,19 @@ main, .navbar, footer {
 .hero {
    /* padding: 4rem 0 6rem;
     /* Altium Silkscreen Style Class */
-  font-family: 'Share Tech Mono', 'Courier New', monospace;
-  text-transform: uppercase;         /* Silkscreen text is almost always ALL CAPS */
-  letter-spacing: 0.15em;            /* PCB vector text uses wide spacing */
-  font-weight: 400;                  /* Single stroke weight */
-  color: #FFFFFF;                    /* Silkscreen White */
-  background-color: #004d25;         /* PCB Solder Mask Green */
-  padding: 4px 8px;
+ font-family: 'OCR-A Silkscreen', monospace;
+  text-transform: uppercase;         /* Silkscreen text is capitalized */
+  letter-spacing: 0.2em;             /* Wide tracking mimics plotter stroke paths */
+  font-size: 1.5rem;
+  line-height: 1.2;
+  
+  /* Silkscreen Color Theme (White Ink on Green Solder Mask) */
+  color: #FFFFFF;
+  background-color: #004D25;         /* Classic Dark Green PCB */
+  padding: 6px 12px;
   display: inline-block;
   
-  /* Optional: Mild text stroke to emulate physical ink thickness */
+  /* Optional: Adds minor ink thickness/bleed effect */
   -webkit-text-stroke: 0.3px #FFFFFF;
 }
 
