@@ -33,7 +33,7 @@ body {
             rgba(11, 15, 25, 0.2), /* Very bright/transparent top */
             rgba(11, 15, 25, 1)    /* Fully opaque at the bottom, matching your bg color */
         ),
-        url('background.jpg'); /* Your image file name here */
+        url('background.png'); /* Your image file name here */
 
     /* 2. Position the image and fix its perspective */
     background-size: cover;          /* Make the image fill the screen */
