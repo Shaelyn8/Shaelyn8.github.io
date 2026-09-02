@@ -137,7 +137,7 @@ nav a[aria-current="page"],
 
 .logo {
     font-weight: 700;
-    font-family: monospace;
+    font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
 }
