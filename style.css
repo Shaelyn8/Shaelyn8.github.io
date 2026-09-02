@@ -63,6 +63,16 @@ main, .navbar, footer {
     position:sticky;
     top: 0;
     z-index: 1000;
+
+    /* Semi-transparent dark background (80% opacity) */
+  background-color: rgba(18, 18, 18, 0.75);
+
+  /* Blurs everything passing behind the navbar */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+  /* Optional: Subtle bottom border to define the edge */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
@@ -182,6 +192,22 @@ nav a[aria-current="page"],
     color: var(--text-muted);
     max-width: 650px;
     margin-bottom: 2rem;
+}
+
+/* Container/Card around your main header text */
+.header-card {
+  display: inline-block;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+
+  /* Semi-transparent background + blur */
+  background-color: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Silkscreen / PCB panel aesthetic */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
