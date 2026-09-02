@@ -73,18 +73,19 @@ main, .navbar, footer {
 
 /* Hero Section */
 .hero {
-    padding: 4rem 0 6rem;
-}
-
-.status-badge {
-    display: inline-block;
-    background: #064e3b;
-    color: #34d399;
-    font-size: 0.8rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 9999px;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
+   /* padding: 4rem 0 6rem;
+    /* Altium Silkscreen Style Class */
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  text-transform: uppercase;         /* Silkscreen text is almost always ALL CAPS */
+  letter-spacing: 0.15em;            /* PCB vector text uses wide spacing */
+  font-weight: 400;                  /* Single stroke weight */
+  color: #FFFFFF;                    /* Silkscreen White */
+  background-color: #004d25;         /* PCB Solder Mask Green */
+  padding: 4px 8px;
+  display: inline-block;
+  
+  /* Optional: Mild text stroke to emulate physical ink thickness */
+  -webkit-text-stroke: 0.3px #FFFFFF;
 }
 
 .hero h1 {
