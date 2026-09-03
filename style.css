@@ -1,8 +1,8 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   width: 100%;
-  min-height: 100vh; /* Ensures body takes full viewport height */
+  overflow-x: hidden; /* Prevents horizontal scrollbars from 100vw */
 }
 
 /* Color Palette & Variables */
@@ -64,23 +64,34 @@ main, .navbar, footer {
 
 /* Navigation */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* Positioning */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 1rem 2rem;
-    width: 100%;
-    box-sizing: border-box;
+  /* Force Full Viewport Width */
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
 
-    backdrop-filter: blur(14px) contrast(115%);
-    -webkit-backdrop-filter: blur(14px) contrast(115%);
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 
-    /* Linear gradient mask: Keeps top 70% solid, fades bottom 30% out to transparent */
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  /* Frosted Glass Background */
+  backdrop-filter: blur(14px) contrast(115%);
+  -webkit-backdrop-filter: blur(14px) contrast(115%);
+
+  /* REMOVE ALL MASK IMAGE RULES (Temporarily) */
+  /* Masks are often the primary cause of full-width blur rendering failures */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+
+  /* Optional: Clean bottom border line instead of mask fade */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
