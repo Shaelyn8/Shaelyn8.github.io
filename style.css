@@ -16,7 +16,7 @@ html, body {
 }
 
 :root {
-    --bg-color: #0b0f19;
+    --bg-color: #000000;
     --card-bg: #111827;
     --card-border: #1f2937;
     --card-border-hover: #374151;
@@ -65,15 +65,11 @@ main, .navbar, footer {
 /* Navigation */
 .navbar {
   /* Positioning */
-  position: sticky;
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1000;
 
   /* Force Full Viewport Width */
-  width: 100vw;
-  max-width: 100%;
-  box-sizing: border-box;
+  width: 100;
 
   /* Layout */
   /* display: flex; */
@@ -87,8 +83,8 @@ main, .navbar, footer {
 
   /* REMOVE ALL MASK IMAGE RULES (Temporarily) */
   /* Masks are often the primary cause of full-width blur rendering failures */
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
+  /* mask-image: none !important;
+  -webkit-mask-image: none !important; */
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
