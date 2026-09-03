@@ -67,6 +67,8 @@ main, .navbar, footer {
   /* Positioning */
   position: fixed;
   top: 0;
+  z-index: 1000;
+  
 
   /* Force Full Viewport Width */
   width: 100;
