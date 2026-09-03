@@ -205,15 +205,15 @@ nav a[aria-current="page"],
   backdrop-filter: blur(16px) contrast(120%) brightness(115%);
   -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
 
- mask-image: 
+ /* mask-image: 
     linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
     linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
   mask-composite: intersect; /* Combines horizontal and vertical gradients into a rectangle */
   
-  -webkit-mask-image: 
+  /*-webkit-mask-image: 
     linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
     linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
-  -webkit-mask-composite: destination-in; /* WebKit equivalent for mask intersection */
+  -webkit-mask-composite: destination-in; WebKit equivalent for mask intersection */
 
   /* 3. Subtle Inner Glass Edge Highlight */
   box-shadow: 
