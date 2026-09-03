@@ -72,6 +72,8 @@ main, .navbar, footer {
     top: 0;
     z-index: 1000;
     padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
 
     backdrop-filter: blur(14px) contrast(115%);
     -webkit-backdrop-filter: blur(14px) contrast(115%);
