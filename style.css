@@ -59,14 +59,19 @@ main, .navbar, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 0;
-    position:sticky;
+
+    position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 1rem 2rem;
 
-  /* Blurs everything passing behind the navbar */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    background: rgba(18, 18, 18, 0.65);
+    backdrop-filter: blur(14px) contrast(115%);
+    -webkit-backdrop-filter: blur(14px) contrast(115%);
+
+    /* Linear gradient mask: Keeps top 70% solid, fades bottom 30% out to transparent */
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
@@ -189,13 +194,38 @@ nav a[aria-current="page"],
 }
 
 /* Container/Card around your main header text */
-.header-card {
-  display: inline-block;
+.frosted-panel {
+  position: relative;
   padding: 2rem 3rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  overflow: hidden;
 
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* 1. Base Blur & Semi-transparent Tint */
+  background: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(16px) contrast(120%) brightness(115%);
+  -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
+
+  /* 2. Soft Edge Fade (Fades blur/background smoothly at all 4 borders) */
+  mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
+
+  /* 3. Glass Edge Highlight (Gives physical depth) */
+  box-shadow: 
+    inset 0 0 15px rgba(255, 255, 255, 0.12),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* 4. Frosted Grain Texture Overlay (Simulates glass surface distortion) */
+.frosted-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.15; /* Adjust noise intensity here */
+
+  /* Embedded SVG Noise Data URL for genuine glass grain */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 .hero-buttons {
