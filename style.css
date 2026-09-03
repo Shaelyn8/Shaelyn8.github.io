@@ -64,28 +64,31 @@ main, .navbar, footer {
 
 /* Navigation */
 .navbar {
- /* Sticky Positioning */
-  position: -webkit-sticky; /* For Safari */
+  /* Positioning */
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 1000;
 
-  /* Full Width */
-  width: 100%;
+  /* Force Full Viewport Width */
+  width: 100vw;
+  max-width: 100%;
   box-sizing: border-box;
 
   /* Layout */
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 
-  /* Full-Width Frosted Glass Blur */
+  /* Frosted Glass Background */
   backdrop-filter: blur(14px) contrast(115%);
   -webkit-backdrop-filter: blur(14px) contrast(115%);
 
-  /* Bottom edge definition */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* REMOVE ALL MASK IMAGE RULES (Temporarily) */
+  /* Masks are often the primary cause of full-width blur rendering failures */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
