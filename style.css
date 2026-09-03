@@ -207,7 +207,7 @@ nav a[aria-current="page"],
   width: fit-content;    /* Modern fallback for inline sizing */
   
   /* 2. Control padding around text before the fade begins */
-  padding: 1.5rem 2rem 1.5rem 1.5rem; /* Top, Right, Bottom, Left */
+  padding: 2rem 2rem 1.5rem 2rem; /* Top, Right, Bottom, Left */
   margin-left: 2rem;
 
   /* 1. Base Blur & Semi-transparent Tint */
