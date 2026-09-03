@@ -202,32 +202,47 @@ nav a[aria-current="page"],
 
 /* Container/Card around your main header text */
 .frosted-panel {
-  /* 1. Shrink-wrap tightly around text */
-  display: inline-block; /* Keeps container strictly as wide as its contents */
-  width: fit-content;    /* Modern fallback for inline sizing */
-  
-  /* 2. Control padding around text before the fade begins */
-  padding: 2rem 2rem 1.5rem 2rem; /* Top, Right, Bottom, Left */
-  margin-left: 2rem;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
 
-  /* 1. Base Blur & Semi-transparent Tint */
+  /* Offset the panel to the left so the blur start line aligns with the button edge */
+  margin-left: -12px; 
+
+  /* EQUAL VERTICAL PADDING (2rem top / 2rem bottom) */
+  /* Extra left padding (2.5rem) accounts for the edge fade zone */
+  padding: 2rem 2.5rem 2rem 2.5rem; 
+
+  /* Base Glass Styling */
   backdrop-filter: blur(16px) contrast(120%) brightness(115%);
   -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
 
- mask-image: 
-    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
-    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
-  mask-composite: intersect; /* Combines horizontal and vertical gradients into a rectangle */
+  /* 12px Tight Edge Mask Fade */
+  mask-image: 
+    linear-gradient(to right, transparent, black 12px, black calc(100% - 12px), transparent),
+    linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent);
+  mask-composite: intersect;
   
   -webkit-mask-image: 
-    linear-gradient(to right, transparent, black 15px, black calc(100% - 15px), transparent),
-    linear-gradient(to bottom, transparent, black 15px, black calc(100% - 15px), transparent);
-  -webkit-mask-composite: destination-in; /* WebKit equivalent for mask intersection */
+    linear-gradient(to right, transparent, black 12px, black calc(100% - 12px), transparent),
+    linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent);
+  -webkit-mask-composite: destination-in;
 
-  /* 3. Subtle Inner Glass Edge Highlight */
   box-shadow: 
     inset 0 0 10px rgba(255, 255, 255, 0.08),
     inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+/* 3. Strip Default Browser Headings Margins for Even Vertical Spacing */
+.frosted-panel h1,
+.frosted-panel h2,
+.frosted-panel p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.frosted-panel h1 {
+  margin-bottom: 0.75rem; /* Gap strictly between heading and subtitle */
 }
 
 /* 4. Frosted Grain Texture Overlay (Simulates glass surface distortion) */
