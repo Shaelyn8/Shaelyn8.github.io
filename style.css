@@ -67,8 +67,6 @@ main, .navbar, footer {
   /* Positioning */
   position: fixed;
   top: 0;
-  z-index: 1000;
-  
 
   /* Force Full Viewport Width */
   width: 100;
@@ -85,8 +83,8 @@ main, .navbar, footer {
 
   /* REMOVE ALL MASK IMAGE RULES (Temporarily) */
   /* Masks are often the primary cause of full-width blur rendering failures */
-  /* mask-image: none !important;
-  -webkit-mask-image: none !important; */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 /* 1. BASE 3D BUTTON (UNPRESSED / RAISED STATE) */
