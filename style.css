@@ -64,15 +64,14 @@ main, .navbar, footer {
 
 /* Navigation */
 .navbar {
-  /* Positioning */
+ /* Sticky Positioning */
+  position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
-  left: 0;
   z-index: 1000;
 
-  /* Force Full Viewport Width */
-  width: 100vw;
-  max-width: 100%;
+  /* Full Width */
+  width: 100%;
   box-sizing: border-box;
 
   /* Layout */
@@ -81,16 +80,11 @@ main, .navbar, footer {
   align-items: center;
   padding: 1rem 2rem;
 
-  /* Frosted Glass Background */
+  /* Full-Width Frosted Glass Blur */
   backdrop-filter: blur(14px) contrast(115%);
   -webkit-backdrop-filter: blur(14px) contrast(115%);
 
-  /* REMOVE ALL MASK IMAGE RULES (Temporarily) */
-  /* Masks are often the primary cause of full-width blur rendering failures */
-  /*mask-image: none !important;
-  -webkit-mask-image: none !important;*/
-
-  /* Optional: Clean bottom border line instead of mask fade */
+  /* Bottom edge definition */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
