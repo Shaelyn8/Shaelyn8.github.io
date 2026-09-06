@@ -76,8 +76,7 @@ main, .navbar, footer {
 
   /* Layout */
   display: flex;
-  gap: 12px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 
@@ -89,6 +88,12 @@ main, .navbar, footer {
   /* Masks are often the primary cause of full-width blur rendering failures */
   /* mask-image: none !important;
   -webkit-mask-image: none !important; */
+}
+
+.nav-links {
+  display: flex !important; /* Force flexbox layout */
+  align-items: center;
+  gap: 16px;                /* Controls spacing between buttons */
 }
 
 .btn {
