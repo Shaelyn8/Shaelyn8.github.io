@@ -73,7 +73,7 @@ main, .navbar, footer {
   width: 100vw;
   box-sizing: border-box;
   max-width: 100%;
-
+  z-index: 10000;
 
   /* Layout */
   display: flex;
