@@ -255,13 +255,13 @@ main, .navbar, footer {
 
   /* 12px Tight Edge Mask Fade */
   mask-image: 
-    linear-gradient(to right, transparent, black 12px, black calc(100% - 12px), transparent),
-    linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent);
+    linear-gradient(to right, transparent, black 25px, black calc(100% - 25px), transparent),
+    linear-gradient(to bottom, transparent, black 25px, black calc(100% - 25px), transparent);
   mask-composite: intersect;
   
   -webkit-mask-image: 
-    linear-gradient(to right, transparent, black 12px, black calc(100% - 12px), transparent),
-    linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent);
+    linear-gradient(to right, transparent, black 25px, black calc(100% - 25px), transparent),
+    linear-gradient(to bottom, transparent, black 25px, black calc(100% - 25px), transparent);
   -webkit-mask-composite: destination-in;
 
   box-shadow: 
