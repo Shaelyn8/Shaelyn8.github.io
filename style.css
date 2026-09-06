@@ -160,7 +160,7 @@ main, .navbar, footer {
 }
 
 .cube .bg-inner {
-  background: #1b2036;
+  background: #040b2c;
   position: absolute;
   left: 2px;
   right: 2px;
@@ -179,14 +179,14 @@ main, .navbar, footer {
 }
 
 .cube:hover .text {
-  color: #1b2036;
+  color: #040b2c;
   transition: all 0.4s;
 }
 
 .cube:hover .bg-right,
 .cube:hover .bg,
 .cube:hover .bg-top {
-  background: #1b2036;
+  background: #040b2c;
 }
 
 .cube:active {
