@@ -94,7 +94,7 @@ main, .navbar, footer {
 .nav-links {
   display: flex !important; /* Force flexbox layout */
   align-items: center;
-  gap: 16px;                /* Controls spacing between buttons */
+  gap: 25px;                /* Controls spacing between buttons */
 }
 
 .btn {
@@ -256,13 +256,13 @@ main, .navbar, footer {
 
   /* 12px Tight Edge Mask Fade */
   mask-image: 
-    linear-gradient(to right, transparent, black 25px, black calc(100% - 25px), transparent),
-    linear-gradient(to bottom, transparent, black 25px, black calc(100% - 25px), transparent);
+    linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent),
+    linear-gradient(to bottom, transparent, black 20px, black calc(100% - 20px), transparent);
   mask-composite: intersect;
   
   -webkit-mask-image: 
-    linear-gradient(to right, transparent, black 25px, black calc(100% - 25px), transparent),
-    linear-gradient(to bottom, transparent, black 25px, black calc(100% - 25px), transparent);
+    linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent),
+    linear-gradient(to bottom, transparent, black 20px, black calc(100% - 20px), transparent);
   -webkit-mask-composite: destination-in;
 
   box-shadow: 
