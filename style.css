@@ -218,7 +218,7 @@ main, .navbar, footer {
   line-height: 1.2;
 
   color: #fff714;     
-  padding: 100px 12px;
+  padding: 150px 12px;
 
 }
 
@@ -330,81 +330,89 @@ main, .navbar, footer {
     border-color: var(--text-muted);
 }
 
-/* Projects Section */
-.section {
-    padding: 4rem 0;
-    border-top: 1px solid var(--card-border);
-}
-
-.section-header {
-    margin-bottom: 2rem;
-}
-
-.section-header h2 {
-    font-size: 1.5rem;
-    color: var(--text-main);
-}
-
-.section-header p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
 .project-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    padding: 1.75rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  /* 1. Set up a 2-column grid layout */
+  display: grid;
+  grid-template-columns: 180px 1fr; /* Fixed thumbnail width + flexible content space */
+  gap: 1.5rem;                       /* Gap between image and text block */
+  align-items: center;               /* Vertically centers image with content */
 }
 
 .project-card:hover {
-    border-color: var(--card-border-hover);
-    box-shadow: 0 4px 20px var(--accent-glow);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
+/* 2. Image Thumbnail Handling */
+.project-image {
+  width: 100%;
+  height: 120px;          /* Fixed height for consistent thumbnails */
+  object-fit: cover;      /* Crops gracefully without stretching */
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+}
+
+/* 3. Text Body Wrapper */
+.project-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header layout remains intact (Title Top-Left, Year Top-Right) */
 .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .project-header h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .project-year {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: monospace;
 }
 
 .project-desc {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
 .project-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .project-tags span {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: var(--accent-color);
-    font-family: monospace;
-    font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--accent-color);
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* 4. Responsive Fallback: Stacks on small screens/mobile */
+@media (max-width: 600px) {
+  .project-card {
+    grid-template-columns: 1fr; /* Stack vertically on small viewports */
+  }
+  
+  .project-image {
+    height: 160px;
+  }
 }
 
 /* Footer */
