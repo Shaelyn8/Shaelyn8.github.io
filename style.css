@@ -370,7 +370,9 @@ main, .navbar, footer {
 .project-header {
   display: flex;
   flex-direction: column;
-  align-items: top;
+  justify-content: flex start;
+  padding: 1.5rem;
+  height: 100%;
   margin-bottom: 0.5rem;
 }
 
