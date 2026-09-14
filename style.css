@@ -344,7 +344,7 @@ main, .navbar, footer {
   grid-template-columns: 1fr 1fr; /* Fixed thumbnail width + flexible content space */
   gap: 1.5rem;                       /* Gap between image and text block */
   overflow: hidden;
-  align-items: center;               /* Vertically centers image with content */
+  align-items: start;               /* Vertically centers image with content */
 }
 
 .project-card:hover {
