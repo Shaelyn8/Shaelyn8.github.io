@@ -369,8 +369,8 @@ main, .navbar, footer {
 /* Header layout remains intact (Title Top-Left, Year Top-Right) */
 .project-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: top;
   margin-bottom: 0.5rem;
 }
 
