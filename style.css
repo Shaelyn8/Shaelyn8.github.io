@@ -371,8 +371,6 @@ main, .navbar, footer {
   display: flex;
   flex-direction: column;
   justify-content: flex start;
-  padding: 1.5rem;
-  height: 100%;
   margin-bottom: 0.5rem;
 }
 
