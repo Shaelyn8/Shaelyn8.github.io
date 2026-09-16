@@ -343,7 +343,7 @@ main, .navbar, footer {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Fixed thumbnail width + flexible content space */
   gap: 1.5rem;                       /* Gap between image and text block */
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: start;               /* Vertically centers image with content */
 }
 
