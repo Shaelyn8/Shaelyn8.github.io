@@ -357,7 +357,7 @@ main, .navbar, footer {
   height: 100%;          /* Fixed height for consistent thumbnails */
   object-fit: cover;      /* Crops gracefully without stretching */
   border-radius: 6px;
-  display: block;
+  display: flex;
 }
 
 /* 3. Text Body Wrapper */
