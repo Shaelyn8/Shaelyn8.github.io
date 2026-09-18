@@ -80,8 +80,8 @@ main, .navbar, footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-
-  background-color: #011b0db9;
+/* 
+  background-color: #011b0db9; */
 }
 
 .nav-links {
@@ -235,6 +235,7 @@ main, .navbar, footer {
   position: relative;
   display: inline-block;
   width: fit-content;
+  background-color: #011b0db9;
 
   /* Offset the panel to the left so the blur start line aligns with the button edge */
   margin-left: -12px; 
