@@ -79,9 +79,9 @@ main, .navbar, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
-/* 
-  background-color: #011b0db9; */
+  padding: 0.25rem 0.5rem;
+
+  background-color: #000000;
 }
 
 .nav-links {
@@ -390,7 +390,6 @@ main, .navbar, footer {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  padding-bottom: 10rem;
 }
 
 .project-tags span {
