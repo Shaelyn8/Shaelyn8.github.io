@@ -352,6 +352,7 @@ main, .navbar, footer {
   object-fit: contain;      /* Crops gracefully without stretching */
   border-radius: 6px;
   display: block;
+  object-position: top;
 }
 
 /* 3. Text Body Wrapper */
@@ -389,6 +390,7 @@ main, .navbar, footer {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 .project-tags span {
