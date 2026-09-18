@@ -79,9 +79,9 @@ main, .navbar, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 
-  background-color: #000000;
+  background-color: #011b0db9;
 }
 
 .nav-links {
