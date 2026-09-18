@@ -74,7 +74,7 @@ main, .navbar, footer {
   box-sizing: border-box;
   max-width: 100%;
   z-index: 10000;
-  height: 60px;
+  height: 80px;
 
   /* Layout */
   display: flex;
