@@ -353,6 +353,7 @@ main, .navbar, footer {
   border-radius: 6px;
   display: block;
   object-position: top;
+  object-position: left;
 }
 
 /* 3. Text Body Wrapper */
