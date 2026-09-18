@@ -390,7 +390,7 @@ main, .navbar, footer {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
 }
 
 .project-tags span {
