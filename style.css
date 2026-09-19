@@ -54,7 +54,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: black;
+    background-color: #2007ae3e;
 }
 
 main, .navbar, footer {
@@ -83,6 +83,8 @@ main, .navbar, footer {
   padding: 1rem 3rem;
 
   background-color: #000000;
+  backdrop-filter: blur(16px) contrast(120%) brightness(115%);
+  -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
 
   /* SVG Wave Mask */
  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 H1200 V70 Q1125,100 1050,70 T900,70 T750,70 T600,70 T450,70 T300,70 T150,70 T0,70 Z" fill="%23000"/></svg>');
@@ -93,7 +95,7 @@ main, .navbar, footer {
 
 .nav-links {
   display: flex !important; /* Force flexbox layout */
-  align-items: center;
+  align-items: top;
   gap: 25px;                /* Controls spacing between buttons */
 }
 
