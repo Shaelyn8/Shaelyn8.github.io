@@ -207,10 +207,6 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
-    line-height: 1;
-
-    /* Shifts the rendering position straight up */
-    transform: translateY(-18px); /* Adjust pixel value as needed */
 }
 /* Hero Section */
 .hero {
