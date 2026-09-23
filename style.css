@@ -370,6 +370,7 @@ main, .navbar, footer {
 .project-body {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 /* Header layout remains intact (Title Top-Left, Year Top-Right) */
@@ -449,6 +450,13 @@ footer {
   margin: 2rem auto;
   padding: 2.5rem 2rem 2rem;
   box-sizing: border-box;
+
+  
+}
+
+
+.about-card:hover {
+  border-color: #fbef02;
 }
 
 /* Text Content */
