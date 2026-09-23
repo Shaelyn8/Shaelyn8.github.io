@@ -370,7 +370,7 @@ main, .navbar, footer {
 .project-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 /* Header layout remains intact (Title Top-Left, Year Top-Right) */
