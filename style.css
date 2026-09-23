@@ -207,9 +207,11 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
-    margin-top: 0;           /* Eliminates any inherited top margin */
-    line-height: 1;          /* Strips default line-height padding pushing text down */
-    align-self: flex-start;  /* Forces logo to stay locked to top */
+    /* Matches the vertical feel of .btn padding: 0.7em 1em */
+    padding-top: 0.7em; 
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* Hero Section */
