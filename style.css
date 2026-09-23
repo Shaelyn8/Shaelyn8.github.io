@@ -482,8 +482,8 @@ footer {
 
 /* Circular Masks */
 .image-item {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
