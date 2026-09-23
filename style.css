@@ -338,7 +338,7 @@ main, .navbar, footer {
 .project-card {
   background-color: var(--card-bg);
   border: 10px solid transparent;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 2.5rem 2rem;
   transition: border-color 0.2s, box-shadow 0.2s;
 
