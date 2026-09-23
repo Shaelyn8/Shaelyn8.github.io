@@ -81,6 +81,7 @@ main, .navbar, footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 3rem;
+  align-items: center;
 
   background-color: #000000;
   backdrop-filter: blur(16px) contrast(120%) brightness(115%);
@@ -207,7 +208,9 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
-    align-items: top;
+    height: fit-content;
+  line-height: 1; /* Eliminates extra vertical text box space */
+  margin: 0;
 }
 
 /* Hero Section */
@@ -336,7 +339,7 @@ main, .navbar, footer {
 
 .project-card {
   background-color: var(--card-bg);
-  border: 1px solid transparent;
+  border: 10px solid transparent;
   border-radius: 8px;
   padding: 2.5rem 2rem;
   transition: border-color 0.2s, box-shadow 0.2s;
