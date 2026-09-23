@@ -68,7 +68,7 @@ section,
 #about, 
 #contact {
   /* Set this to roughly 20vh to 30vh to push the section toward the center */
-  scroll-margin-top: 10vh; 
+  scroll-margin-top: 20vh; 
 }
 
 /* Navigation */
