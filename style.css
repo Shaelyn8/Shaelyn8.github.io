@@ -208,10 +208,9 @@ main, .navbar, footer {
     color: var(--accent-color);
     font-size: 1.1rem;
     line-height: 1;
-    align-self: flex-start;
-    
-    /* Shift logo upward to match the visual center/text of .btn */
-    margin-top: 0.7em; /* Adjust this value up/down as needed (e.g., 0.5em to 0.9em) */
+
+    /* Shifts the rendering position straight up */
+    transform: translateY(-8px); /* Adjust pixel value as needed */
 }
 /* Hero Section */
 .hero {
