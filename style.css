@@ -432,3 +432,85 @@ footer {
     font-size: 0.85rem;
     border-top: 1px solid var(--card-border);
 }
+
+/* Card Container */
+.about-card {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Text Content */
+.card-content {
+  text-align: left;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #1a1a1a;
+}
+
+.card-content p {
+  line-height: 1.6;
+  color: #4a4a4a;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  background-color: #0066cc;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+.btn-primary:hover {
+  background-color: #0052a3;
+}
+
+/* Image Row */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Circular Masks */
+.image-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps image proportions inside the circle */
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .image-item {
+    width: 75px;
+    height: 75px;
+  }
+}
