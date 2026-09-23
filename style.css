@@ -81,7 +81,6 @@ main, .navbar, footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 3rem;
-  align-items: center;
 
   background-color: #000000;
   backdrop-filter: blur(16px) contrast(120%) brightness(115%);
