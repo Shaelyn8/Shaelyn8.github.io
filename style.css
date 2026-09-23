@@ -463,22 +463,6 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.btn-primary {
-  display: inline-block;
-  padding: 0.6rem 1.25rem;
-  background-color: #0066cc;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  margin-bottom: 2rem;
-}
-
-.btn-primary:hover {
-  background-color: #0052a3;
-}
-
 /* Image Row */
 .image-gallery {
   display: flex;
