@@ -434,13 +434,14 @@ footer {
 
 /* Card Container */
 .about-card {
-  max-width: 650px;
-  margin: 2rem auto;
-  padding: 2.5rem 2rem 2rem;
-  background-color: #ffffff;
-  border-radius: 16px;
+  background-color: var(--card-bg);
+  border: 10px solid transparent;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:"OCR-A Silkscreen", monospace;
   box-sizing: border-box;
 }
 
@@ -453,12 +454,12 @@ footer {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.75rem;
-  color: #1a1a1a;
+  color: var(--accent-color);
 }
 
 .card-content p {
   line-height: 1.6;
-  color: #4a4a4a;
+  color: var(--text-muted);
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -470,7 +471,6 @@ footer {
   align-items: center;
   gap: 1rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #f0f0f0;
 }
 
 /* Circular Masks */
