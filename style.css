@@ -207,13 +207,12 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
-    /* Matches the vertical feel of .btn padding: 0.7em 1em */
-    padding-top: 0.7em; 
     line-height: 1;
-    display: inline-flex;
-    align-items: center;
+    align-self: flex-start;
+    
+    /* Shift logo upward to match the visual center/text of .btn */
+    margin-top: 0.7em; /* Adjust this value up/down as needed (e.g., 0.5em to 0.9em) */
 }
-
 /* Hero Section */
 .hero {
    /* padding: 4rem 0 6rem;
