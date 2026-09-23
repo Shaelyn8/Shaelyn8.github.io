@@ -79,7 +79,7 @@ main, .navbar, footer {
   /* Layout */
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
   padding: 1rem 3rem;
 
   background-color: #000000;
@@ -95,8 +95,8 @@ main, .navbar, footer {
 
 .nav-links {
   display: flex !important; /* Force flexbox layout */
-  align-items: top;
   gap: 25px;                /* Controls spacing between buttons */
+  height: fit-content;
 }
 
 .btn {
