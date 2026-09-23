@@ -335,6 +335,12 @@ main, .navbar, footer {
     border-color: var(--text-muted);
 }
 
+.project-grid {
+  display: flex;
+  flex-direction: column; /* Or grid */
+  gap: 2rem; /* <--- Controls space between each card */
+}
+
 .project-card {
   background-color: var(--card-bg);
   border: 10px solid transparent;
@@ -350,7 +356,6 @@ main, .navbar, footer {
   gap: 1.5rem;                       /* Gap between image and text block */
   /* overflow: hidden; */
   align-items: start;               /* Vertically centers image with content */
-  gap: 2rem;
 }
 
 .project-card:hover {
