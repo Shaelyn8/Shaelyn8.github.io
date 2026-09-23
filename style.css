@@ -350,6 +350,7 @@ main, .navbar, footer {
   gap: 1.5rem;                       /* Gap between image and text block */
   /* overflow: hidden; */
   align-items: start;               /* Vertically centers image with content */
+  gap: 2rem;
 }
 
 .project-card:hover {
@@ -370,7 +371,6 @@ main, .navbar, footer {
 .project-body {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
 }
 
 /* Header layout remains intact (Title Top-Left, Year Top-Right) */
