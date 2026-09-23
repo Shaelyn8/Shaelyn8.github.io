@@ -63,6 +63,14 @@ main, .navbar, footer {
     
 }
 
+section, 
+#projects, 
+#about, 
+#contact {
+  /* Set this to roughly 20vh to 30vh to push the section toward the center */
+  scroll-margin-top: 10vh; 
+}
+
 /* Navigation */
 .navbar {
   /* Positioning */
@@ -210,6 +218,12 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
+}
+
+.logo-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit;         /* Inherits yellow color from .logo */
+  display: inline-block; /* Preserves layout dimensions */
 }
 /* Hero Section */
 .hero {
