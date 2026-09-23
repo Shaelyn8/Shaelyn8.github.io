@@ -82,7 +82,7 @@ main, .navbar, footer {
   align-items: flex-start;
   padding: 1rem 3rem;
 
-  background-color: #000000;
+  background-color: #1a0789be;
   backdrop-filter: blur(16px) contrast(120%) brightness(115%);
   -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
 
@@ -91,6 +91,9 @@ main, .navbar, footer {
   mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0 H1200 V70 Q1125,100 1050,70 T900,70 T750,70 T600,70 T450,70 T300,70 T150,70 T0,70 Z" fill="%23000"/></svg>');
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+
+  backdrop-filter: blur(16px) contrast(120%) brightness(115%);
+  -webkit-backdrop-filter: blur(16px) contrast(120%) brightness(115%);
 }
 
 .nav-links {
