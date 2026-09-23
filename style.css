@@ -207,9 +207,9 @@ main, .navbar, footer {
     font-family: "OCR-A Silkscreen", monospace;
     color: var(--accent-color);
     font-size: 1.1rem;
-    height: fit-content;
-  line-height: 1; /* Eliminates extra vertical text box space */
-  margin: 0;
+    margin-top: 0;           /* Eliminates any inherited top margin */
+    line-height: 1;          /* Strips default line-height padding pushing text down */
+    align-self: flex-start;  /* Forces logo to stay locked to top */
 }
 
 /* Hero Section */
