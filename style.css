@@ -123,6 +123,18 @@ section,
   height: fit-content;
 }
 
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.15; /* Adjust noise intensity here */
+
+  /* Embedded SVG Noise Data URL for genuine glass grain */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
 .btn {
   display: block;
   padding: 0.7em 1em;
@@ -308,6 +320,7 @@ section,
 .frosted-panel p {
   margin: 0;
   line-height: 1.2;
+  font-family:"OCR-A Silkscreen", monospace;
 }
 
 .frosted-panel h1 {
@@ -411,6 +424,7 @@ section,
   flex-direction: column;
   justify-content: flex start;
   margin-bottom: 0.5rem;
+  font-family:"OCR-A Silkscreen", monospace;
 }
 
 .project-header h3 {
